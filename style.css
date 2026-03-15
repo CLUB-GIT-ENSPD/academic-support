@@ -1,1 +1,570 @@
-// here is my style
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+    color: #2368C4;
+}
+
+.nav-bar {
+    height: 6rem;
+    background-color: #FFFFFF;
+    padding: 1.3rem 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-bar .logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.nav-bar .logo-icon {
+    background-color: #172857;
+    border-radius: .3rem;
+    padding: .2rem .4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo .logo-text {
+    color: #172857;
+    font-weight: bold;
+}
+
+.nav-bar .logo-text span {
+    color: #2368C4;
+}
+
+.nav-bar .nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.nav-bar .nav-menu .nav-link:last-child {
+    background-color: #165EFC;
+    color: #FFFFFF;
+    padding: .2rem 1rem;
+    border-radius: .3rem;
+}
+
+.hero {
+    background-color: #172857;
+    padding: 6rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #FFFFFF;
+    gap: 1.5rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.hero h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1rem;
+    max-width: 600px;
+    margin-bottom: 1.5rem;
+    opacity: 0.9;
+}
+
+.hero .btns {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hero button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.hero button:first-child {
+    background-color: #165EFC;
+    color: #FFFFFF;
+}
+
+.hero button:first-child:hover {
+    background-color: #0d47c7;
+    transform: translateY(-2px);
+}
+
+.hero button:last-child {
+    background-color: transparent;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+}
+
+.hero button:last-child:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.service {
+    padding: 4rem 2rem;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.service>span {
+    color: #165EFC;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.service>h2 {
+    font-size: 2rem;
+    color: #172857;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.service>p {
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.service-card {
+    background-color: #FFFFFF;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20rem;
+}
+
+.service-card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    transform: translateY(-5px);
+}
+
+.service-card .icon {
+    width: 60px;
+    height: 60px;
+    background-color: #f0f0f0;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.service-card h3 {
+    color: #172857;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.service-card p {
+    color: #999;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.service-card a {
+    margin-top: 1rem;
+    color: #165EFC;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.fonctionnement {
+    padding: 4rem 2rem;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.fonctionnement>span {
+    color: #165EFC;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.fonctionnement>h2 {
+    font-size: 2rem;
+    color: #172857;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.fonctionnement>p {
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.steps-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5rem;
+    max-width: 1400px;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 0 1 220px;
+}
+
+.step-icon {
+    width: 100px;
+    height: 100px;
+    background-color: #2d2d2d;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: #FFFFFF;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15), inset 0 -2px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+/* .step-icon::after {
+    content: '';
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    top: -5px;
+    left: -5px;
+} */
+
+.step-icon.active {
+    background-color: #165EFC;
+    box-shadow: 0 8px 25px rgba(22, 94, 252, 0.3), inset 0 -2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.step-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #172857;
+    margin-bottom: 0.8rem;
+}
+
+.step-description {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+.step-connector {
+    width: 40px;
+    height: 3px;
+    background-color: #bbb;
+    margin-top: 40px;
+    flex-shrink: 0;
+}
+
+.cta-button {
+    padding: 0.75rem 1.5rem;
+    background-color: #165EFC;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0d47c7;
+    transform: translateY(-2px);
+}
+
+.tarifs {
+    padding: 4rem 2rem;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.tarifs>span {
+    color: #165EFC;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.tarifs>h2 {
+    font-size: 2rem;
+    color: #172857;
+    margin-top: 0.5rem;
+    margin-bottom: 4rem;
+}
+
+.pricing-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    width: 100%;
+    max-width: 75rem;
+}
+
+.pricing-card {
+    background-color: #FFFFFF;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing-card.featured {
+    background-color: #172857;
+    color: #FFFFFF;
+    border: none;
+    transform: scale(1.05);
+}
+
+.pricing-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    color: inherit;
+    font-weight: 700;
+}
+
+.pricing-card .price-start {
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 0.3rem;
+}
+
+.pricing-card.featured .price-start {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.pricing-card .price {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+    color: inherit;
+}
+
+/* .pricing-card .price-currency {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: inherit;
+} */
+
+.pricing-card .card-subtitle {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+/* .pricing-card ul {
+    list-style: none;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.pricing-card li {
+    padding: 0.5rem 0;
+    font-size: 0.95rem;
+    color: inherit;
+    border-bottom: 1px solid #eee;
+}
+
+.pricing-card.featured li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.pricing-card li:last-child {
+    border-bottom: none;
+} */
+
+.pricing-button {
+    padding: 0.7rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    margin-top: auto;
+}
+
+.pricing-card .pricing-button {
+    background-color: #f0f0f0;
+    color: #172857;
+}
+
+.pricing-card.featured .pricing-button {
+    background-color: #165EFC;
+    color: #FFFFFF;
+}
+
+.pricing-button:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+footer {
+    background-color: #e7e7e7;
+    padding: 3rem 2rem 0;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto 2rem;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-brand {
+    gap: 0.8rem;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-logo-icon {
+    background-color: #172857;
+    border-radius: 0.3rem;
+    padding: 0.2rem 0.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-logo-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-logo-text {
+    color: #172857;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.footer-logo-text span {
+    color: #2368C4;
+}
+
+.footer-brand p {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.footer-section h4 {
+    color: #333;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.footer-section ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.footer-section ul li a {
+    color: #666;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #165EFC;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 0.8rem;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.contact-icon {
+    font-size: 1.3rem;
+    color: #165EFC;
+}
+
+.footer-bottom {
+    border-top: 1px solid #ddd;
+    padding: 1.5rem 2rem;
+    text-align: center;
+    color: #999;
+    font-size: 0.85rem;
+}
